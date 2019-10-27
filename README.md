@@ -1,9 +1,9 @@
 # Web Design Training site HBOGO
 
-código desenvolvido prática deliberada de programação FRONT-END.
+Código desenvolvido prática deliberada de programação FRONT-END.
 
 <p align="center">
-    <img src="" />
+    <a href="https://github.com/fabiofeio15/web-design-hbo-go/blob/master/screenshot/Template_hboGo_figma.png?raw=true" width="100%"><img src="https://github.com/fabiofeio15/web-design-hbo-go/blob/master/screenshot/Template_hboGo_figma.png?raw=true" /></a>
 <p>
 
 ## Recursos Utilizados
