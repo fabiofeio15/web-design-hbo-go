@@ -12,3 +12,4 @@ Código desenvolvido prática deliberada de programação FRONT-END.
 - HTML
 - CSS
 - **[Boostraap](https://getbootstrap.com/)**
+- **[Slick Slider](http://kenwheeler.github.io/slick/)**
