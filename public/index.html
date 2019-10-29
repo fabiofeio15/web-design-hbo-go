@@ -97,6 +97,21 @@
           <div class="heroCarousel">
             <div class="slick-slider slick-initialized">
               <div class="slick-list">
+                <div class="btnContainer row margin-0 align-items-center justify-content-between">
+                  <button class="slick-prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 9 15">
+                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" d="M8 14L1 7.5 8 1"></path>
+                      </svg>
+                  </button>
+                  <button class="slick-next">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="10" height="15" viewBox="0 0 9 15">
+                        <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" 
+                        stroke-linejoin="round" stroke-width="2" d="M1 14l7-6.5L1 1">
+                        </path>
+                      </svg>
+                  </button>
+                </div>
                 <div class="slider single-item">
                   <div
                     class="carouselImage img-fluid slick-track"
@@ -181,6 +196,7 @@
               </div>
             </div>
           </div>
+          
         </div>
         <div class="contentWrapper">
           <div class="carouselWrapper">
@@ -270,8 +286,16 @@
       $(".single-item").slick({
         autoplay: true,
         autoplaySpeed: 2000,
-        fade: true
+        fade: true,
+        arrows: false
       });
+      $('.slick-prev').click(function(){
+        $('.slider').slick('slickPrev');
+      })
+
+      $('.slick-next').click(function(){
+        $('.slider').slick('slickNext');
+      })
     </script>
   </body>
 </html>

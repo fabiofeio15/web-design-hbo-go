@@ -5,7 +5,6 @@
 body {
   font-family: "Lato", sans-serif;
 }
-
 /* Small screens (default) */
 html {
   font-size: 100%;
@@ -42,15 +41,39 @@ html {
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-
+.btnContainer button svg {
+  width: 10px;
+  height: 10px;
+}
 .slick-next,
 .slick-prev {
   bottom: 140px;
-  right: 50px;
   width: auto;
   display: flex;
   position: absolute;
   align-items: flex-end;
+  z-index: 1;
+  width: 27px;
+  height: 23px;
+  padding: 6px 9px;
+  background: hsla(0, 0%, 100%, 0.2);
+  box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 0;
+}
+.slick-next:hover,
+.slick-prev:hover {
+  background: hsla(0, 0%, 100%, 0.5);
+}
+
+.slick-next {
+  right: 38px;
+}
+
+.slick-prev {
+  right: 72px;
 }
 
 .heroCarousel .carouselImage .mask {
