@@ -55,3 +55,101 @@ html {
   position: absolute;
   align-items: flex-end;
 }
+/* contentHeader */
+
+.navigation {
+  background: linear-gradient(
+    180deg,
+    #0b0d11 0,
+    rgba(11, 13, 17, 0.7) 25%,
+    rgba(11, 13, 17, 0.5) 50%,
+    rgba(11, 13, 17, 0.3) 75%,
+    rgba(11, 13, 17, 0)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  height: 60px;
+  padding: 0 21px;
+}
+.navigation img.hboLogo {
+  width: 108px;
+  height: 24px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 60px;
+}
+
+.contentHeaderMenu {
+  font-size: 18px;
+  color: #ddd;
+  position: relative;
+}
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .navigation .contentHeaderMenu .navElement {
+    font-size: 14px;
+  }
+}
+.navigation .contentHeaderMenu ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-top: 17px;
+}
+.navigation .contentHeaderMenu ul li:first-child {
+  margin-left: 0;
+}
+
+.navigation .contentHeaderMenu ul li {
+  display: -webkit-flex;
+  display: flex;
+  margin: auto 10px;
+}
+.navigation .contentHeaderMenu .navElement {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 18px;
+  color: #ddd;
+  cursor: pointer;
+}
+.navigation svg.element.search,
+.navigation svg.element.watchList {
+  height: 16px;
+  width: 18px;
+}
+.navigation .element {
+  margin: auto 12px;
+}
+.navigation .element.register {
+  color: #ddd;
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 18px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-self: center;
+  align-self: center;
+  cursor: pointer;
+}
+
+.navigation .element.login {
+  height: 46px;
+  width: auto;
+  font-family: Roboto-Bold, sans-serif;
+  font-size: 18px;
+  line-height: 0;
+  padding: 0 35px;
+}
+button.btn.btnLightBlue {
+  color: #fff;
+  border: none;
+  background-color: #009dff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
