@@ -34,16 +34,13 @@ html {
 }
 
 .slick-track {
-  height: 90vh;
+  height: 84vh;
 }
 
-.caroseulImage {
-  height: auto;
+.carouselImage {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 100%;
-  width: 100%;
 }
 
 .slick-next,
@@ -55,6 +52,74 @@ html {
   position: absolute;
   align-items: flex-end;
 }
+
+.heroCarousel .carouselImage .mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.heroCarousel .carouselImage .heroCarouselTopShadowMask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2), transparent);
+  z-index: -1;
+}
+.heroCarousel .carouselImage .heroCarouselBottomShadowMask {
+  position: absolute;
+  top: 560px;
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.58));
+  z-index: -1;
+}
+.heroCarousel .carouselImage .heroCarouselLeftShadowMask {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 810px;
+  background-image: linear-gradient(
+    270deg,
+    transparent,
+    transparent,
+    rgba(0, 0, 0, 0.58)
+  );
+  z-index: -1;
+}
+.heroCarousel .carouselImage .mask .contentContainer {
+  width: 100%;
+  height: 100%;
+  padding: 120px 60px 60px;
+  color: #fff;
+  font-size: 20px;
+
+  text-align: left;
+  cursor: pointer;
+}
+
+.heroCarousel .carouselImage .mask .contentContainer .contentDetailsWrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.heroCarousel .carouselImage .mask .contentContainer p.category {
+  font-size: 24px;
+  margin-bottom: 20px;
+  cursor: default;
+  text-transform: uppercase;
+  text-align: left;
+}
+.heroCarousel .carouselImage .mask .contentContainer p.nameOfMovie {
+  max-width: 100%;
+  font-size: 64px;
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: normal;
+  cursor: pointer;
+}
+
 /* contentHeader */
 
 .navigation {
