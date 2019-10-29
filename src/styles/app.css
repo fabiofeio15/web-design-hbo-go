@@ -24,3 +24,85 @@ html {
     font-size: 120%;
   }
 }
+
+/* carousel */
+.heroCarousel {
+  width: auto;
+  position: relative;
+  display: block;
+  height: 100vh;
+}
+
+.slick-track {
+  height: 100vh;
+}
+
+.caroseulImage {
+  height: auto;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
+  width: 100%;
+}
+
+.slick-next,
+.slick-prev {
+  bottom: 140px;
+  right: 50px;
+  width: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-end;
+}
+
+/* contentHeader */
+
+.navigation {
+  background: linear-gradient(
+    180deg,
+    #0b0d11 0,
+    rgba(11, 13, 17, 0.7) 25%,
+    rgba(11, 13, 17, 0.5) 50%,
+    rgba(11, 13, 17, 0.3) 75%,
+    rgba(11, 13, 17, 0)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  height: 60px;
+}
+.navigation img.hboLogo {
+  width: 81px;
+  height: 18px;
+  margin-right: 38px;
+}
+
+.contentHeaderMenu {
+  font-size: 14px;
+  color: #ddd;
+  position: relative;
+}
+.navigation .contentHeaderMenu ul {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.navigation .contentHeaderMenu ul li:first-child {
+  margin-left: 0;
+}
+
+.navigation .contentHeaderMenu ul li {
+  display: -webkit-flex;
+  display: flex;
+  margin: auto 10px;
+}
+
+.affiliateLogo {
+  width: 60px;
+}
