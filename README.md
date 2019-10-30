@@ -1,4 +1,4 @@
-# Web Design Training site HBOGO
+# Web Design Training site HBOGO - Home
 
 Código desenvolvido prática deliberada de programação FRONT-END.
 
