@@ -331,3 +331,20 @@ button.btn.btnLightBlue {
   object-fit: cover;
   object-position: center;
 }
+
+.contentCarousel .carouselBody .slick-next,
+.contentCarousel .carouselBody .slick-prev {
+  display: none;
+}
+
+.contentCarousel .carouselBody:hover .slick-next {
+  display: block !important;
+}
+
+.contentCarousel .carouselBody .slick-next,
+.contentCarousel .carouselBody .slick-prev {
+  background: rgba(0, 0, 0, 0.6);
+  border: 0;
+  padding: 0 20px;
+  font-size: 18px;
+}

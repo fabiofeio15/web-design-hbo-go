@@ -307,12 +307,20 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script>
+      $(document).ready(function(){
+        $(".contentCarousel .carouselBody .slick-next").removeAttr("style").hide();
+        $(".contentCarousel .carouselBody .slick-prev").removeAttr("style").hide();
+        $(".contentCarousel .carouselBody .slick-next").html('>');
+        $(".contentCarousel .carouselBody .slick-prev").html('<');
+      })
+
       $(".single-item").slick({
         autoplay: true,
         autoplaySpeed: 2000,
         fade: true,
         arrows: false
       });
+
       $('.slick-prev').click(function(){
         $('.slider').slick('slickPrev');
       })
@@ -320,14 +328,17 @@
       $('.slick-next').click(function(){
         $('.slider').slick('slickNext');
       })
-      $(".carouselBodyTrackContainer").slick({
-        arrows: false,
+
+      $(".carouselBodyTrackContainer").slick({  
         infinite: true,
         speed: 300,
         slidesToShow: 1,
         variableWidth: true
       });
-       
+
+      $(".contentCarousel .carouselBody .slick-next").click(function(){
+        $(".contentCarousel .carouselBody .slick-prev").css('display', 'block')
+      });
     </script>
   </body>
 </html>
