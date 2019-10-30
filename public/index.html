@@ -198,8 +198,9 @@
           </div>
           
         </div>
-        <div class="contentWrapper">
+        <div class="ContentWrapper">
           <div class="carouselWrapper">
+            <div class="contentCarousel">
             <div class="carouselHeader">
               <div class="container-fluid">
                 <div class="row justify-content-between align-items-center">
@@ -207,60 +208,83 @@
                 </div>
               </div>
             </div>
-            <div class="carouselBody destaque">
-              <img class="carouselImage" src="images/continue_assitindo.png" />
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="contentWrapper">
-          <div class="carouselWrapper">
-            <div class="carouselheader">
-              <div class="container-fluid">
-                <div class="row justify-content-between align-items-center">
-                  <span class="carouselName regular">EM DESTAQUE</span>
-                </div>
-              </div>
-            </div>
             <div class="carouselBody">
-              <div class="carouselItemContainer">
-                <div
-                  class="carouselItem d-flex justify-content-start align-items-end"
-                >
-                  <img class="carouselImage" src="images/1x1384.jpg" />
+              <div class="track carouselBodyTrackContainer d-flex">
+                <div class="carouselItemContainer">
+                  <div
+                    class="carouselItem d-flex justify-content-start align-items-end"
+                  >
+                    <img class="carouselImage" src="images/1x1384.jpg" />
+                  </div>
                 </div>
-              </div>
-              <div class="carouselItemContainer">
-                <div
-                  class="carouselItem d-flex justify-content-start align-items-end"
-                >
-                  <img class="carouselImage" src="images/2x1384.jpg" />
+                <div class="carouselItemContainer">
+                  <div
+                    class="carouselItem d-flex justify-content-start align-items-end"
+                  >
+                    <img class="carouselImage" src="images/2x1384.jpg" />
+                  </div>
                 </div>
-              </div>
-              <div class="carouselItemContainer">
-                <div
-                  class="carouselItem d-flex justify-content-start align-items-end"
-                >
-                  <img class="carouselImage" src="images/3x1384.jpg" />
+                <div class="carouselItemContainer">
+                  <div
+                    class="carouselItem d-flex justify-content-start align-items-end"
+                  >
+                    <img class="carouselImage" src="images/3x1384.jpg" />
+                  </div>
                 </div>
-              </div>
-              <div class="carouselItemContainer">
-                <div
-                  class="carouselItem d-flex justify-content-start align-items-end"
-                >
-                  <img class="carouselImage" src="images/4x1384.jpg" />
+                <div class="carouselItemContainer">
+                  <div
+                    class="carouselItem d-flex justify-content-start align-items-end"
+                  >
+                    <img class="carouselImage" src="images/4x1384.jpg" />
+                  </div>
                 </div>
-              </div>
-              <div class="carouselItemContainer">
-                <div
-                  class="carouselItem d-flex justify-content-start align-items-end"
-                >
-                  <img class="carouselImage" src="images/5x1384.jpg" />
+                <div class="carouselItemContainer">
+                  <div
+                    class="carouselItem d-flex justify-content-start align-items-end"
+                  >
+                    <img class="carouselImage" src="images/5x1384.jpg" />
+                  </div>
                 </div>
+                <div class="carouselItemContainer">
+                    <div
+                      class="carouselItem d-flex justify-content-start align-items-end"
+                    >
+                      <img class="carouselImage" src="images/6x1384.jpg" />
+                    </div>
+                  </div>
+                  <div class="carouselItemContainer">
+                      <div
+                        class="carouselItem d-flex justify-content-start align-items-end"
+                      >
+                        <img class="carouselImage" src="images/7x1384.jpg" />
+                      </div>
+                    </div>
+                    <div class="carouselItemContainer">
+                        <div
+                          class="carouselItem d-flex justify-content-start align-items-end"
+                        >
+                          <img class="carouselImage" src="images/8x1384.jpg" />
+                        </div>
+                      </div>
+                      <div class="carouselItemContainer">
+                          <div
+                            class="carouselItem d-flex justify-content-start align-items-end"
+                          >
+                            <img class="carouselImage" src="images/9x1384.jpg" />
+                          </div>
+                        </div>
+                        <div class="carouselItemContainer">
+                            <div
+                              class="carouselItem d-flex justify-content-start align-items-end"
+                            >
+                              <img class="carouselImage" src="images/10x1384.jpg" />
+                            </div>
+                          </div>
               </div>
             </div>
           </div>
-        </div> -->
+           </div> 
+        </div>
       </div>
     </div>
     <script
@@ -296,6 +320,14 @@
       $('.slick-next').click(function(){
         $('.slider').slick('slickNext');
       })
+      $(".carouselBodyTrackContainer").slick({
+        arrows: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        variableWidth: true
+      });
+       
     </script>
   </body>
 </html>
